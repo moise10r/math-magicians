@@ -72,6 +72,7 @@ button {
   background-color: #858693;
   font-size: 1.3rem;
   color: #e0e0e0;
+  text-align: end;
 }
 
 .calculator-main-container .row .btn {
