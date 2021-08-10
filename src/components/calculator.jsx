@@ -7,7 +7,43 @@ class Calculator extends Component {
   }
 
   render() {
-    return (<h1>Calculator</h1>);
+    return (
+      <div className="calculator-main-container">
+        <div className="row result">
+          <input type="text" />
+        </div>
+        <div className="row">
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+        </div>
+        <div className="row">
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+        </div>
+        <div className="row">
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+        </div>
+        <div className="row">
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+        </div>
+        <div className="row">
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+          <button className="btn" type="button">AC</button>
+        </div>
+      </div>
+    );
   }
 }
 
