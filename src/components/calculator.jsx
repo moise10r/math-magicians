@@ -9,34 +9,34 @@ class Calculator extends Component {
   render() {
     return (
       <div className="calculator-main-container">
-        <div className="row result">
+        <div className="row flex-center result">
           <input type="text" />
         </div>
-        <div className="row">
+        <div className="row flex-center keyboard">
           <button className="btn" type="button">AC</button>
           <button className="btn" type="button">AC</button>
           <button className="btn" type="button">AC</button>
           <button className="btn" type="button">AC</button>
         </div>
-        <div className="row">
+        <div className="row flex-center keyboard">
           <button className="btn" type="button">AC</button>
           <button className="btn" type="button">AC</button>
           <button className="btn" type="button">AC</button>
           <button className="btn" type="button">AC</button>
         </div>
-        <div className="row">
+        <div className="row flex-center keyboard">
           <button className="btn" type="button">AC</button>
           <button className="btn" type="button">AC</button>
           <button className="btn" type="button">AC</button>
           <button className="btn" type="button">AC</button>
         </div>
-        <div className="row">
+        <div className="row flex-center keyboard">
           <button className="btn" type="button">AC</button>
           <button className="btn" type="button">AC</button>
           <button className="btn" type="button">AC</button>
           <button className="btn" type="button">AC</button>
         </div>
-        <div className="row">
+        <div className="row flex-center keyboard">
           <button className="btn" type="button">AC</button>
           <button className="btn" type="button">AC</button>
           <button className="btn" type="button">AC</button>
