@@ -1,5 +1,7 @@
 # Math Magicians App
 
+![calcul](https://user-images.githubusercontent.com/57562869/128854718-9eef3b78-0226-4c17-a049-bcdc487c4d91.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
