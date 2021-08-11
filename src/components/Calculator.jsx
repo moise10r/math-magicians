@@ -11,13 +11,6 @@ class Calculator extends Component {
       next: null,
       operation: null,
     };
-    this.rows = {
-      row1: ['AC', '+/-', '%', '÷'],
-      row2: ['7', '8', '9', 'x'],
-      row3: ['4', '5', '6', '-'],
-      row4: ['1', '2', '3', '+'],
-      row5: ['0', '.', '='],
-    };
   }
 
   handleKeyPress = (key) => {
