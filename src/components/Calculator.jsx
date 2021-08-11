@@ -18,6 +18,10 @@ class Calculator extends Component {
     this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
+  handleKeyPress = (key) => {
+    console.log(typeof key);
+  }
+
   render() {
     const { total, next, operation } = this.state;
     console.log(total, next, operation);
