@@ -29,7 +29,7 @@ class Calculator extends Component {
 
   displayResult = ({ total, next, operation }) => {
     if (total && operation && next) {
-      return `${total}${operation}${next}`;
+      return `${total} ${operation} ${next}`;
     }
     if (!total && !operation && !next) {
       return 0;
@@ -51,7 +51,7 @@ class Calculator extends Component {
     return (
       <div className="calculator-main-container">
         <div className="row flex-center result">
-          <input type="text" value={this.displayResult({ total, next, operation })} onChange={this.handleChange} />
+          <input type="text" value={this.displayResult({ total, next, operation })} onChange={this.handleChange} disabled />
         </div>
         <div className="row flex-center ">
           {this.rows.row1.map((key) => <button onClick={() => this.handleKeyPress(key)} key={key} className="btn" type="button">{key}</button>)}
