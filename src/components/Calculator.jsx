@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import calculator from '../logics/calculator';
+import Row from './common/row';
 
 class Calculator extends Component {
   constructor(props) {
@@ -19,6 +20,7 @@ class Calculator extends Component {
   }
 
   handleKeyPress = (key) => {
+    console.log(key);
     const state = calculator(this.state, key);
     this.setState(state);
   }
@@ -53,21 +55,7 @@ class Calculator extends Component {
         <div className="row flex-center result">
           <input type="text" value={this.displayResult({ total, next, operation })} onChange={this.handleChange} disabled />
         </div>
-        <div className="row flex-center ">
-          {this.rows.row1.map((key) => <button onClick={() => this.handleKeyPress(key)} key={key} className="btn" type="button">{key}</button>)}
-        </div>
-        <div className="row flex-center ">
-          {this.rows.row2.map((key) => <button onClick={() => this.handleKeyPress(key)} key={key} className="btn" type="button">{key}</button>)}
-        </div>
-        <div className="row flex-center ">
-          {this.rows.row3.map((key) => <button onClick={() => this.handleKeyPress(key)} key={key} className="btn" type="button">{key}</button>)}
-        </div>
-        <div className="row flex-center ">
-          {this.rows.row4.map((key) => <button onClick={() => this.handleKeyPress(key)} key={key} className="btn" type="button">{key}</button>)}
-        </div>
-        <div className="row flex-center ">
-          {this.rows.row5.map((key) => <button onClick={() => this.handleKeyPress(key)} key={key} className="btn" type="button">{key}</button>)}
-        </div>
+        <Row onClick={this.handleKeyPress} />
       </div>
     );
   }
