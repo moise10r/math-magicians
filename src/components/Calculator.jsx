@@ -1,28 +1,27 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import calculator from '../logics/Calculator';
 import Row from './common/row';
 import Result from './common/result';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: 0,
-      next: null,
-      operation: null,
-    };
-  }
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: 0,
+    next: null,
+    operation: null,
+  });
 
-  handleKeyPress = (key) => {
-    const state = calculator(this.state, key);
-    this.setState(state);
-  }
+  const handleKeyPress = (key) => {
+    const response = calculator(state, key);
+    setState({ ...state, ...response });
+  };
+  const handleChange = ({ currentTarget: input }) => {
+    setState({
+      ...state,
+      next: input.value,
+    });
+  };
 
-  handleChange = ({ currentTarget: input }) => {
-    this.setState({ next: input.value });
-  }
-
-  displayResult = ({ total, next, operation }) => {
+  const displayResult = ({ total, next, operation }) => {
     if (total && operation && next) {
       return `${total} ${operation} ${next}`;
     }
@@ -39,16 +38,13 @@ class Calculator extends Component {
       return `${total}`;
     }
     return '0';
-  }
-
-  render() {
-    return (
-      <div className="calculator-main-container">
-        <Result value={this.displayResult(this.state)} onChange={this.handleChange} />
-        <Row onClick={this.handleKeyPress} />
-      </div>
-    );
-  }
-}
+  };
+  return (
+    <div className="calculator-main-container">
+      <Result value={displayResult(state)} onChange={handleChange} />
+      <Row onClick={handleKeyPress} />
+    </div>
+  );
+};
 
 export default Calculator;
