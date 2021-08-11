@@ -21,7 +21,6 @@ class Calculator extends Component {
   }
 
   handleKeyPress = (key) => {
-    console.log(key);
     const state = calculator(this.state, key);
     this.setState(state);
   }
@@ -35,7 +34,7 @@ class Calculator extends Component {
       return `${total} ${operation} ${next}`;
     }
     if (!total && !operation && !next) {
-      return 0;
+      return '0';
     }
     if (next) {
       return `${next}`;
@@ -46,7 +45,7 @@ class Calculator extends Component {
     if (!next && !operation) {
       return `${total}`;
     }
-    return 0;
+    return '0';
   }
 
   render() {
