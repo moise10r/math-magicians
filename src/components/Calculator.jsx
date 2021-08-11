@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import calculator from '../logics/calculator';
+import calculator from '../logics/Calculator';
 import Row from './common/row';
 import Result from './common/result';
 
