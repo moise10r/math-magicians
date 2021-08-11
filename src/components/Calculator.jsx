@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import calculator from '../utils/calculator';
+import calculator from '../logics/calculator';
 
 class Calculator extends Component {
   constructor(props) {
