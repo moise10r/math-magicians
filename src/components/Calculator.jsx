@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import calculator from '../logics/calculator';
 import Row from './common/row';
+import Result from './common/result';
 
 class Calculator extends Component {
   constructor(props) {
@@ -49,12 +50,9 @@ class Calculator extends Component {
   }
 
   render() {
-    const { total, next, operation } = this.state;
     return (
       <div className="calculator-main-container">
-        <div className="row flex-center result">
-          <input type="text" value={this.displayResult({ total, next, operation })} onChange={this.handleChange} disabled />
-        </div>
+        <Result value={this.displayResult(this.state)} onChange={this.handleChange} />
         <Row onClick={this.handleKeyPress} />
       </div>
     );
