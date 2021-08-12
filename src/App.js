@@ -1,6 +1,6 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
-import Calculator from './components/calculator';
+import Calculator from './components/Calculator';
 import './assets/styles/main.css';
 
 class App extends Component {
