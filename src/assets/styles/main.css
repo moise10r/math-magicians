@@ -1,4 +1,11 @@
 /*  Typography */
+@import url('./home.css');
+
+:root {
+  --bg-color: #131313;
+  --sec-text-color: #f8b22f;
+  --text-color: #ffffff;
+}
 
 * {
   margin: 0;
@@ -15,6 +22,11 @@ input,
 button {
   border: none;
   outline: none;
+}
+
+ul,
+li {
+  list-style: none;
 }
 
 .flex-center {
