@@ -1,16 +1,18 @@
+import { Link } from 'react-router-dom';
+
 const Header = () => (
   <header className="header-main-container">
     <div className="main-header-wrapper flex-between">
       <div className="logo-wrapper">
-        <a href="#2">
+        <Link to="/">
           Math
           <span>Magicians</span>
-        </a>
+        </Link>
       </div>
       <ul className="link-list">
-        <li className="link"><a href="#2">Home</a></li>
-        <li className="link"><a href="#2">Calculator</a></li>
-        <li className="link"><a href="#2">Quote</a></li>
+        <li className="link"><Link to="/">Home</Link></li>
+        <li className="link"><Link to="/calculator">Calculator</Link></li>
+        <li className="link"><Link to="/quote">Quote</Link></li>
       </ul>
     </div>
   </header>
