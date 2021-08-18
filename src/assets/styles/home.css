@@ -27,6 +27,14 @@
   margin-left: 0.5rem;
 }
 
+.main-wrapper a {
+  padding: 1rem 2rem;
+  background-color: var(--sec-text-color);
+  color: var(--text-color);
+  font-size: 1.3rem;
+  border-radius: 10rem;
+}
+
 .link-list {
   display: flex;
 }
@@ -48,7 +56,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-} 
+}
 
 .main-headline-section .bg {
   position: absolute;
@@ -90,12 +98,4 @@
   margin-top: 2rem;
   color: var(--text-color);
   margin-bottom: 3rem;
-}
-
-.main-wrapper a {
-  padding: 1rem 2rem;
-  background-color: var(--sec-text-color);  
-  color: var(--text-color);
-  font-size: 1.3rem;
-  border-radius: 10rem;
 }
