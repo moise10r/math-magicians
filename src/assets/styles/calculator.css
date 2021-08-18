@@ -45,3 +45,15 @@
 .right-container p span {
   color: var(--sec-text-color);
 }
+
+@media screen and (max-width: 900px) {
+  .calculator-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .right-container,
+  .left-container {
+     width: 100%;
+  }
+}

@@ -1,6 +1,7 @@
 /*  Typography */
 @import url('./home.css');
 @import url('./calculator.css');
+@import url('./quota.css');
 
 :root {
   --bg-color: #131313;
@@ -67,7 +68,6 @@ li {
 
 .calculator-main-container {
   width: 100%;
-  /* height: 100%; */
   max-width: 32rem;
   border: 1px solid #e0e0e0;
 }
@@ -81,6 +81,7 @@ li {
 }
 
 .calculator-main-container .row.result input {
+  width: 100%;
   flex: 1;
   padding: 1rem 1rem;
   background-color: #858693;
