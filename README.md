@@ -7,6 +7,8 @@
 
 > This is a calculator that solves advanced problems in Physics, Mathematics.
 
+## Live demo
+[Live Demo](https://zealous-booth-f687ea.netlify.app/)
 
 ## Built With
 
