@@ -1,4 +1,13 @@
 /*  Typography */
+@import url('./home.css');
+@import url('./calculator.css');
+@import url('./quota.css');
+
+:root {
+  --bg-color: #131313;
+  --sec-text-color: #f8b22f;
+  --text-color: #fff;
+}
 
 * {
   margin: 0;
@@ -15,6 +24,11 @@ input,
 button {
   border: none;
   outline: none;
+}
+
+ul,
+li {
+  list-style: none;
 }
 
 .flex-center {
@@ -67,6 +81,7 @@ button {
 }
 
 .calculator-main-container .row.result input {
+  width: 100%;
   flex: 1;
   padding: 1rem 1rem;
   background-color: #858693;
@@ -79,7 +94,7 @@ button {
   flex: 1;
   border: 1px solid #e0e0e0;
   border-bottom: 0;
-  padding: 1rem 0;
+  padding: 2rem 0;
   cursor: pointer;
 }
 

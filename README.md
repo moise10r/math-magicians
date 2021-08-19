@@ -1,7 +1,8 @@
 # Math Magicians
 "Math Magicians" is a web application for all fans of mathematics. It permits clients to form straightforward calculations "
 
-![calcul](https://user-images.githubusercontent.com/57562869/128854718-9eef3b78-0226-4c17-a049-bcdc487c4d91.png)
+![ca](https://user-images.githubusercontent.com/57562869/129978234-3d5ef9b3-00bd-4dee-a183-d6468f28a5ee.png)
+
 
 
 > This is a calculator that solves advanced problems in Physics, Mathematics.

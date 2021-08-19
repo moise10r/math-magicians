@@ -1,0 +1,13 @@
+.main-quato-section {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+.main-quato-section p {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  color: var(--text-color);
+  text-align: center;
+}
