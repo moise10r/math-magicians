@@ -6,7 +6,7 @@ import Main from './components/main';
 class App extends Component {
   render() {
     return (
-      <div className="App flex-center">
+      <div title="App" className="App flex-center">
         <Main />
       </div>
     );
