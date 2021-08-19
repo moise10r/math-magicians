@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot of quote 1`] = `
+<section
+  className="main-quato-section flex-center"
+>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet esse, animi aliquam illo, corrupti atque aliquid neque placeat quisquam tempore qui omnis impedit, laborum hic
+     
+    <span
+      aria-label="img"
+      role="img"
+    >
+      🥰🥰
+    </span>
+    perspiciatis vitae temporibus assumenda autem?
+    <span
+      aria-label="img"
+      role="img"
+    >
+      😃😃
+    </span>
+  </p>
+</section>
+`;
