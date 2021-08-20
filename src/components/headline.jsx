@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Headline = () => (
   <section className="main-headline-section">
     <div className="bg" />

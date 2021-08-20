@@ -1,3 +1,4 @@
+import React from 'react';
 import propTypes from 'prop-types';
 
 const Row = ({ onClick }) => {
@@ -9,7 +10,7 @@ const Row = ({ onClick }) => {
     ['0', '.', '='],
   ];
   return (
-    <>
+    <div>
       {rows.map((row) => (
         <div key={row} className="row flex-center ">
           {
@@ -18,7 +19,7 @@ const Row = ({ onClick }) => {
         </div>
 
       ))}
-    </>
+    </div>
   );
 };
 

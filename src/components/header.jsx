@@ -1,4 +1,11 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
+
+const links = [
+  { id: 1, name: 'Home', to: '/' },
+  { id: 2, name: 'Calculator', to: '/calculator' },
+  { id: 3, name: 'Quote', to: '/quote' },
+];
 
 const Header = () => (
   <header className="header-main-container">
@@ -10,9 +17,9 @@ const Header = () => (
         </Link>
       </div>
       <ul className="link-list">
-        <li className="link"><Link to="/">Home</Link></li>
-        <li className="link"><Link to="/calculator">Calculator</Link></li>
-        <li className="link"><Link to="/quote">Quote</Link></li>
+        {
+          links.map(({ id, name, to }) => (<li key={id} className="link"><Link to={to}>{name}</Link></li>))
+        }
       </ul>
     </div>
   </header>
