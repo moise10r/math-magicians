@@ -1,14 +1,14 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { BrowserRouter } from 'react-router-dom';
-import Header from '../components/header';
+import Main from '../components/main';
 
-const MockHeader = () => (
+const MockMain = () => (
   <BrowserRouter>
-    <Header />
+    <Main />
   </BrowserRouter>
 );
-it('should match the header snapshot', () => {
-  const tree = renderer.create(<MockHeader />).toJSON();
+it('should match the main snapshot', () => {
+  const tree = renderer.create(<MockMain />).toJSON();
   expect(tree).toMatchSnapshot();
 });
